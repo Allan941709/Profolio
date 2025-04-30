@@ -14,6 +14,27 @@ hamburger.addEventListener('click', () => {
 });
 
 // =============================================
+//Nav2 Conocimientos
+// =============================================
+
+// Funcionalidad de las pestañas
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remover clase active de todos los botones/contenidos
+        tabBtns.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Activar el botón y contenido seleccionado
+        btn.classList.add('active');
+        const tabId = btn.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+    });
+});
+
+// =============================================
 // SLIDER DE PROYECTOS
 // =============================================
 const sliderContainer = document.querySelector('.slider-container');
@@ -26,55 +47,58 @@ let currentIndex = 0;
 const totalSlides = projectCards.length;
  
 // Función para actualizar la posición del slider
-function updateSlider() {
-    const slideWidth = projectCards[0].offsetWidth + parseInt(getComputedStyle(projectCards[0]).marginRight);
-    sliderContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    
-    // Actualizar indicadores
-    indicators.forEach((indicator, index) => {
-        if (index === currentIndex) {
-            indicator.classList.add('active');
-        } else {
-            indicator.classList.remove('active');
-        }
-    });
-}
- 
-// Eventos para los botones de navegación
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
-    updateSlider();
-});
- 
-nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
-    updateSlider();
-});
- 
-// Eventos para los indicadores
-indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-        currentIndex = index;
-        updateSlider();
+const projectTabBtns = document.querySelectorAll('.project-tab-btn');
+const projectContents = document.querySelectorAll('.project-content');
+
+projectTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        projectTabBtns.forEach(btn => btn.classList.remove('active'));
+        projectContents.forEach(content => content.classList.remove('active'));
+        
+        btn.classList.add('active');
+        const projectId = btn.getAttribute('data-project');
+        document.getElementById(projectId).classList.add('active');
     });
 });
- 
-// Slider automático
-let sliderInterval = setInterval(() => {
-    currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
-    updateSlider();
-}, 5000);
- 
-// Pausar slider automático al pasar el mouse
-sliderContainer.addEventListener('mouseenter', () => {
-    clearInterval(sliderInterval);
+// Galería de imágenes modal
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById("modalImage");
+const captionText = document.querySelector(".modal-caption");
+const closeModal = document.querySelector(".close-modal");
+
+document.querySelectorAll('.gallery-img').forEach(img => {
+    img.addEventListener('click', function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    });
 });
- 
-sliderContainer.addEventListener('mouseleave', () => {
-    sliderInterval = setInterval(() => {
-        currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
-        updateSlider();
-    }, 5000);
+
+closeModal.addEventListener('click', () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        window.scrollTo({
+            top: targetElement.offsetTop - 70,
+            behavior: 'smooth'
+        });
+        
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
 });
  
 // =============================================

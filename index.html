@@ -9,9 +9,7 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- ==================== -->
-    <!-- SECCIÓN HEADER -->
-    <!-- ==================== -->
+    <!-- Header -->
     <header>
         <div class="banner">
             <img src="/img/Blue & Black Simple Profile LinkedIn Banner.png" alt="Soy Allan">
@@ -28,9 +26,7 @@
         </div>
     </header>
     
-    <!-- ==================== -->
-    <!-- SECCIÓN NAVEGACIÓN -->
-    <!-- ==================== -->
+    <!-- Navigation -->
     <nav>
         <div class="logo">Mi Portafolio</div>
         <ul class="nav-links">
@@ -46,11 +42,9 @@
         </div>
     </nav>
     
-    <!-- ==================== -->
-    <!-- CONTENIDO PRINCIPAL -->
-    <!-- ==================== -->
+    <!-- Main Content -->
     <main>
-        <!-- SECCIÓN SOBRE MÍ -->
+        <!-- About Section -->
         <section id="about">
             <h2 class="section-title">Sobre mí</h2>
             <div class="about-content">
@@ -58,104 +52,147 @@
                     <p>¡Hola! Soy un desarrollador web Fullstack con formación en ingeniería informática y una sólida base en programación web. Me apasiona crear soluciones digitales que integren un frontend atractivo y funcional con un backend robusto y eficiente.</p>
                     <p>Antes de dedicarme al desarrollo, trabajé en atención al cliente y gestión de inventarios, lo que fortaleció mis habilidades de organización, comunicación y resolución de problemas. Esta experiencia, combinada con mi perfil técnico, me permite entender tanto las necesidades del usuario como los procesos internos de un sistema.</p> 
                     <p>Actualmente, estoy enfocado en seguir creciendo como profesional, aprendiendo nuevas tecnologías y aportando valor a proyectos web que marquen la diferencia. Me considero una persona proactiva, dinámica y siempre lista para enfrentar nuevos desafíos.</p>
-                    <div style="margin-top: 20px;">                  
-                        </a>
-                    </div>
                 </div>
-                <div class="skills">
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>HTML/CSS</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
+                <div class="skills-tabs">
+                    <nav class="tabs-nav">
+                        <button class="tab-btn" data-tab="softskills">Soft Skills</button>
+                        <button class="tab-btn active" data-tab="frontend">Front-end</button>
+                        <button class="tab-btn" data-tab="backend">Back-end</button>                        
+                    </nav>
+
+                    <div class="tab-content active" id="frontend">
+                        <div class="skills-grid">
+                            <div class="skill-icon" title="HTML5">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-icon" title="CSS3">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-icon" title="JavaScript">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JS</span>
+                            </div>
+                            <div class="skill-icon" title="Vue.js">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue">
+                                <span>Vue</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>JavaScript</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%"></div>
+
+                    <div class="tab-content" id="backend">
+                        <div class="skills-grid">
+                            <div class="skill-icon" title="Node.js">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node">
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-icon" title="Python">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-icon" title="MySQL">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Vue</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 50%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">
-                            <span>Python</span>
-                            <span>0%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 0%"></div>
+
+                    <div class="tab-content" id="softskills">
+                        <div class="skills-grid">
+                            <div class="skill-icon" title="Trabajo en equipo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" alt="Teamwork">
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="skill-icon" title="Comunicación">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" alt="Comunicación">
+                                <span>Comunicación</span>
+                            </div>
+                            <div class="skill-icon" title="Resolución de problemas">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2011/2011672.png" alt="Problem Solving">
+                                <span>Problem Solving</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- ==================== -->
-        <!-- SECCIÓN PROYECTOS -->
-        <!-- ==================== -->
+        <!-- Projects Section -->
         <section id="projects">
             <h2 class="section-title">Mis Proyectos</h2>
-            <div class="projects-slider">
-            <div class="slider-container">
-                <div class="project-card">
-                <div class="project-img"></div>
-                        <h3 class="project-title">Proyecto 1</h3>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
+            
+            <nav class="projects-tabs-nav">
+                <button class="project-tab-btn active" data-project="project1">Proyecto 1</button>
+                <button class="project-tab-btn" data-project="project2">Proyecto 2</button>
+                <button class="project-tab-btn" data-project="project3">Proyecto 3</button>
+            </nav>
+
+            <div class="project-content active" id="project1">
+                <div class="project-info">
+                    <h3>E-commerce Vue.js</h3>
+                    <p>Plataforma de comercio electrónico con carrito de compras y pasarela de pago.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Stripe API</span>
                     </div>
-                    <div class="project-card">
-                        <div class="project-img"></div>
-                        <h3 class="project-title">Proyecto 2</h3>
-                        <p class="project-description">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
+                    <a href="#" class="project-link">Ver demo</a>
+                </div>
+                
+                <div class="project-gallery">
+                    <img src="https://via.placeholder.com/600x400?text=Home+E-commerce" alt="Página principal del e-commerce" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Carrito+Compras" alt="Carrito de compras funcional" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Checkout" alt="Proceso de pago seguro" class="gallery-img">
+                </div>
+            </div>
+
+            <div class="project-content" id="project2">
+                <div class="project-info">
+                    <h3>Blog Personal</h3>
+                    <p>Plataforma de blogging con sistema de autenticación y comentarios.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
                     </div>
-                    <div class="project-card">
-                        <div class="project-img"></div>
-                        <h3 class="project-title">Proyecto 3</h3>
-                        <p class="project-description">Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">SASS</span>
-                        </div>
+                    <a href="#" class="project-link">Ver demo</a>
+                </div>
+                
+                <div class="project-gallery">
+                    <img src="https://via.placeholder.com/600x400?text=Listado+Artículos" alt="Listado de artículos del blog" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Artículo+Completo" alt="Vista de artículo completo" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Panel+Admin" alt="Panel de administración" class="gallery-img">
+                </div>
+            </div>
+
+            <div class="project-content" id="project3">
+                <div class="project-info">
+                    <h3>App del Clima</h3>
+                    <p>Aplicación de pronóstico del tiempo con geolocalización.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">SASS</span>
                     </div>
+                    <a href="#" class="project-link">Ver demo</a>
                 </div>
-                <div class="slider-controls">
-                    <button class="slider-btn prev-btn">←</button>
-                    <button class="slider-btn next-btn">→</button>
+                
+                <div class="project-gallery">
+                    <img src="https://via.placeholder.com/600x400?text=Búsqueda+Ciudad" alt="Búsqueda por ciudad" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Pronóstico+5+Días" alt="Pronóstico extendido" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Geolocalización" alt="Detección automática de ubicación" class="gallery-img">
                 </div>
-                <div class="slider-indicators">
-                    <div class="indicator active"></div>
-                    <div class="indicator"></div>
-                    <div class="indicator"></div>
-                </div>
+            </div>
+
+            <div class="modal" id="imageModal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div class="modal-caption"></div>
             </div>
         </section>
         
-        <!-- ==================== -->
-        <!-- SECCIÓN SERVICIOS -->
-        <!-- ==================== -->
+        <!-- Services Section -->
         <section id="services">
             <h2 class="section-title">Mis Servicios</h2>
             <div class="services-grid">
@@ -177,9 +214,7 @@
             </div>
         </section>
         
-        <!-- ==================== -->
-        <!-- SECCIÓN CONTACTO -->
-        <!-- ==================== -->
+        <!-- Contact Section -->
         <section id="contact">
             <h2 class="section-title">Contacto</h2>
             <div class="contact-container">
@@ -187,11 +222,11 @@
                     <p>¿Tienes una idea en mente? ¿Quieres trabajar conmigo? Completa el formulario o escríbeme directamente. Estoy disponible para proyectos freelance, colaboraciones y cualquier oportunidad interesante que tengas en mente.</p>
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
-                        <span></span>
+                        <span>correo@ejemplo.com</span>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
-                        <span></span>
+                        <span>+123 456 7890</span>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
@@ -221,9 +256,7 @@
         </section>
     </main>
     
-    <!-- ==================== -->
-    <!-- SECCIÓN FOOTER -->
-    <!-- ==================== -->
+    <!-- Footer -->
     <footer>
         <div class="social-links">
             <a href="#" class="social-icon">
