@@ -15,7 +15,9 @@
             <img src="/img/Blue & Black Simple Profile LinkedIn Banner.png" alt="Soy Allan">
         </div>
         <div class="profile-container">
-            <div class="profile-pic"></div>
+            <div class="profile-pic">
+                <img src="/img/Perfil.png" alt="Allan Solorzano" class="profile-image">
+            </div>
             <div class="profile-info">
                 <h1>Allan Solorzano</h1>
                 <p>Desarrollador Web | Full Stack</p>
@@ -25,7 +27,7 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Navigation -->
     <nav>
         <div class="logo">Mi Portafolio</div>
@@ -41,7 +43,7 @@
             <span></span>
         </div>
     </nav>
-    
+
     <!-- Main Content -->
     <main>
         <!-- About Section -->
@@ -50,14 +52,15 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>¡Hola! Soy un desarrollador web Fullstack con formación en ingeniería informática y una sólida base en programación web. Me apasiona crear soluciones digitales que integren un frontend atractivo y funcional con un backend robusto y eficiente.</p>
-                    <p>Antes de dedicarme al desarrollo, trabajé en atención al cliente y gestión de inventarios, lo que fortaleció mis habilidades de organización, comunicación y resolución de problemas. Esta experiencia, combinada con mi perfil técnico, me permite entender tanto las necesidades del usuario como los procesos internos de un sistema.</p> 
+                    <p>Antes de dedicarme al desarrollo, trabajé en atención al cliente y gestión de inventarios, lo que fortaleció mis habilidades de organización, comunicación y resolución de problemas. Esta experiencia, combinada con mi perfil técnico, me permite entender tanto las necesidades del usuario como los procesos internos de un sistema.</p>
                     <p>Actualmente, estoy enfocado en seguir creciendo como profesional, aprendiendo nuevas tecnologías y aportando valor a proyectos web que marquen la diferencia. Me considero una persona proactiva, dinámica y siempre lista para enfrentar nuevos desafíos.</p>
                 </div>
                 <div class="skills-tabs">
                     <nav class="tabs-nav">
+                        <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                        <button class="tab-btn" data-tab="backend">Backend</button>
+                        <button class="tab-btn" data-tab="devtools">Herramientas</button>
                         <button class="tab-btn" data-tab="softskills">Soft Skills</button>
-                        <button class="tab-btn active" data-tab="frontend">Front-end</button>
-                        <button class="tab-btn" data-tab="backend">Back-end</button>                        
                     </nav>
 
                     <div class="tab-content active" id="frontend">
@@ -72,60 +75,134 @@
                             </div>
                             <div class="skill-icon" title="JavaScript">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                                <span>JS</span>
+                                <span>JavaScript</span>
                             </div>
                             <div class="skill-icon" title="Vue.js">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue">
-                                <span>Vue</span>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+                                <span>Vue.js</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="tab-content" id="backend">
                         <div class="skills-grid">
-                            <div class="skill-icon" title="Node.js">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node">
-                                <span>Node.js</span>
-                            </div>
                             <div class="skill-icon" title="Python">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                                 <span>Python</span>
                             </div>
-                            <div class="skill-icon" title="MySQL">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                                <span>MySQL</span>
+
+                            <div class="skill-icon" title="Flask">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask">
+                                <span>Flask</span>
+                            </div>
+                            <div class="skill-icon" title="C#">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                                <span>C#</span>
+                            </div>
+                            <div class="skill-icon" title="C++">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="devtools">
+                        <div class="skills-grid">
+                            <div class="skill-icon" title="Visual Studio Code">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-icon" title="Visual Basic">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="Visual Basic">
+                                <span>Visual Basic</span>
+                            </div>
+                            <div class="skill-icon" title="GitHub">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-icon" title="Figma">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-icon" title="Trello">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello">
+                                <span>Trello</span>
+                            </div>
+                            <div class="skill-icon" title="Postman">
+                                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman">
+                                <span>Postman</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="tab-content" id="softskills">
                         <div class="skills-grid">
-                            <div class="skill-icon" title="Trabajo en equipo">
-                                <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" alt="Teamwork">
-                                <span>Teamwork</span>
-                            </div>
-                            <div class="skill-icon" title="Comunicación">
+                            <div class="skill-icon" title="Comunicación clara, efectiva y asertiva">
                                 <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" alt="Comunicación">
                                 <span>Comunicación</span>
                             </div>
+                            <div class="skill-icon" title="Trabajo en equipo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" alt="Trabajo en equipo">
+                                <span>Trabajo en equipo</span>
+                            </div>
                             <div class="skill-icon" title="Resolución de problemas">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2011/2011672.png" alt="Problem Solving">
-                                <span>Problem Solving</span>
+                                <img src="https://cdn-icons-png.flaticon.com/512/2011/2011672.png" alt="Resolución de problemas">
+                                <span>Resolución de problemas</span>
+                            </div>
+                            <div class="skill-icon" title="Adaptabilidad">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4727/4727266.png" alt="Adaptabilidad">
+                                <span>Adaptabilidad</span>
+                            </div>
+                            <div class="skill-icon" title="Gestión del tiempo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2972/2972531.png" alt="Gestión del tiempo">
+                                <span>Gestión del tiempo</span>
+                            </div>
+                            <div class="skill-icon" title="Pensamiento crítico">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3406/3406996.png" alt="Pensamiento crítico">
+                                <span>Pensamiento crítico</span>
+                            </div>
+                            <div class="skill-icon" title="Creatividad">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3143/3143636.png" alt="Creatividad">
+                                <span>Creatividad</span>
+                            </div>
+                            <div class="skill-icon" title="Empatía">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4207/4207253.png" alt="Empatía">
+                                <span>Empatía</span>
+                            </div>
+                            <div class="skill-icon" title="Liderazgo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/860/860454.png" alt="Liderazgo">
+                                <span>Liderazgo</span>
+                            </div>
+                            <div class="skill-icon" title="Aprendizaje continuo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="Aprendizaje continuo">
+                                <span>Aprendizaje continuo</span>
+                            </div>
+                            <div class="skill-icon" title="Inteligencia emocional">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3039/3039371.png" alt="Inteligencia emocional">
+                                <span>Inteligencia emocional</span>
+                            </div>
+                            <div class="skill-icon" title="Negociación">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4207/4207253.png" alt="Negociación">
+                                <span>Negociación</span>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
-        
+
         <!-- Projects Section -->
         <section id="projects">
             <h2 class="section-title">Mis Proyectos</h2>
-            
+
             <nav class="projects-tabs-nav">
                 <button class="project-tab-btn active" data-project="project1">Proyecto 1</button>
                 <button class="project-tab-btn" data-project="project2">Proyecto 2</button>
                 <button class="project-tab-btn" data-project="project3">Proyecto 3</button>
+                <button class="project-tab-btn" data-project="project4">Proyecto 4</button>
+                <button class="project-tab-btn" data-project="project5">Proyecto 5</button>
+                <button class="project-tab-btn" data-project="project6">Proyecto 6</button>
             </nav>
 
             <div class="project-content active" id="project1">
@@ -133,13 +210,12 @@
                     <h3>E-commerce Vue.js</h3>
                     <p>Plataforma de comercio electrónico con carrito de compras y pasarela de pago.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">Stripe API</span>
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">Css</span>
                     </div>
                     <a href="#" class="project-link">Ver demo</a>
                 </div>
-                
+
                 <div class="project-gallery">
                     <img src="https://via.placeholder.com/600x400?text=Home+E-commerce" alt="Página principal del e-commerce" class="gallery-img">
                     <img src="https://via.placeholder.com/600x400?text=Carrito+Compras" alt="Carrito de compras funcional" class="gallery-img">
@@ -152,13 +228,12 @@
                     <h3>Blog Personal</h3>
                     <p>Plataforma de blogging con sistema de autenticación y comentarios.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">Css</span>
                     </div>
                     <a href="#" class="project-link">Ver demo</a>
                 </div>
-                
+
                 <div class="project-gallery">
                     <img src="https://via.placeholder.com/600x400?text=Listado+Artículos" alt="Listado de artículos del blog" class="gallery-img">
                     <img src="https://via.placeholder.com/600x400?text=Artículo+Completo" alt="Vista de artículo completo" class="gallery-img">
@@ -171,17 +246,74 @@
                     <h3>App del Clima</h3>
                     <p>Aplicación de pronóstico del tiempo con geolocalización.</p>
                     <div class="project-tech">
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">Css</span>
                         <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">API REST</span>
-                        <span class="tech-tag">SASS</span>
                     </div>
                     <a href="#" class="project-link">Ver demo</a>
                 </div>
-                
+
                 <div class="project-gallery">
                     <img src="https://via.placeholder.com/600x400?text=Búsqueda+Ciudad" alt="Búsqueda por ciudad" class="gallery-img">
                     <img src="https://via.placeholder.com/600x400?text=Pronóstico+5+Días" alt="Pronóstico extendido" class="gallery-img">
                     <img src="https://via.placeholder.com/600x400?text=Geolocalización" alt="Detección automática de ubicación" class="gallery-img">
+                </div>
+            </div>
+
+            <div class="project-content" id="project4">
+                <div class="project-info">
+                    <h3>Tienda Online de Ropa</h3>
+                    <p>Plataforma de e-commerce especializada en moda con sistema de recomendaciones personalizadas.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <a href="#" class="project-link">Ver demo</a>
+                </div>
+
+                <div class="project-gallery">
+                    <img src="https://via.placeholder.com/600x400?text=Catálogo+Productos" alt="Catálogo de productos" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Detalle+Producto" alt="Página de detalle de producto" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Proceso+Compra" alt="Proceso de compra" class="gallery-img">
+                </div>
+            </div>
+
+            <div class="project-content" id="project5">
+                <div class="project-info">
+                    <h3>Gestor de Tareas</h3>
+                    <p>Aplicación para gestionar tareas y proyectos con sistema de recordatorios y prioridades.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <a href="#" class="project-link">Ver demo</a>
+                </div>
+
+                <div class="project-gallery">
+                    <img src="https://via.placeholder.com/600x400?text=Dashboard+Tareas" alt="Panel principal de tareas" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Calendario+Proyectos" alt="Vista de calendario" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Estadísticas+Productividad" alt="Estadísticas de productividad" class="gallery-img">
+                </div>
+            </div>
+
+            <div class="project-content" id="project6">
+                <div class="project-info">
+                    <h3>Red Social para Fotógrafos</h3>
+                    <p>Plataforma para que fotógrafos compartan su trabajo, reciban feedback y conecten con clientes potenciales.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Cloudinary</span>
+                    </div>
+                    <a href="#" class="project-link">Ver demo</a>
+                </div>
+
+                <div class="project-gallery">
+                    <img src="https://via.placeholder.com/600x400?text=Galería+Fotos" alt="Galería de fotografías" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Perfil+Usuario" alt="Perfil de usuario" class="gallery-img">
+                    <img src="https://via.placeholder.com/600x400?text=Sistema+Mensajería" alt="Sistema de mensajería" class="gallery-img">
                 </div>
             </div>
 
@@ -191,29 +323,34 @@
                 <div class="modal-caption"></div>
             </div>
         </section>
-        
+
         <!-- Services Section -->
         <section id="services">
             <h2 class="section-title">Mis Servicios</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3 class="service-title">Diseño UI/UX</h3>
-                    <p class="service-description">Diseño de interfaces intuitivas y experiencias de usuario que conectan con tu audiencia y mejoran la usabilidad.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3 class="service-title">Desarrollo Web</h3>
-                    <p class="service-description">Desarrollo de sitios web modernos, rápidos y responsivos que funcionan en todos los dispositivos.</p>
+                    <div class="service-icon">�</div>
+                    <h3 class="service-title">Sitios Web Básicos</h3>
+                    <p class="service-description">Creación de sitios web sencillos con HTML, CSS y JavaScript. Ideales para presentar tu negocio o proyecto personal en internet.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📱</div>
-                    <h3 class="service-title">Aplicaciones Móviles</h3>
-                    <p class="service-description">Desarrollo de aplicaciones móviles nativas y multiplataforma para iOS y Android.</p>
+                    <h3 class="service-title">Diseño Responsive</h3>
+                    <p class="service-description">Adaptación de sitios web para que se vean correctamente en todos los dispositivos: móviles, tablets y ordenadores.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">�</div>
+                    <h3 class="service-title">Mejoras y Correcciones</h3>
+                    <p class="service-description">Solución de problemas y mejoras en sitios web existentes. Corrección de errores y optimización básica de rendimiento.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">�</div>
+                    <h3 class="service-title">Mantenimiento Web</h3>
+                    <p class="service-description">Actualización de contenido, respaldo de información y mantenimiento básico para mantener tu sitio web funcionando correctamente.</p>
                 </div>
             </div>
         </section>
-        
+
         <!-- Contact Section -->
         <section id="contact">
             <h2 class="section-title">Contacto</h2>
@@ -222,7 +359,7 @@
                     <p>¿Tienes una idea en mente? ¿Quieres trabajar conmigo? Completa el formulario o escríbeme directamente. Estoy disponible para proyectos freelance, colaboraciones y cualquier oportunidad interesante que tengas en mente.</p>
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
-                        <span>correo@ejemplo.com</span>
+                        <a href="mailto:allansolorzano700@gmail.com" class="contact-link">allansolorzano700@gmail.com</a>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
@@ -233,48 +370,47 @@
                         <span>Ciudad, Bilbao</span>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contacto">
+                    <p class="hidden" style="display:none;">
+                        <label>No llenar si eres humano: <input name="bot-field" /></label>
+                    </p>
                     <div class="form-group">
                         <label for="name">Nombre</label>
-                        <input type="text" id="name" class="form-control" required>
+                        <input type="text" id="name" name="name" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
+                        <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="subject">Asunto</label>
-                        <input type="text" id="subject" class="form-control" required>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Mensaje</label>
-                        <textarea id="message" class="form-control" required></textarea>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Enviar Mensaje</button>
                 </form>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer -->
     <footer>
         <div class="social-links">
-            <a href="#" class="social-icon">
-                <img src="/img/facebook.png" alt="Facebook">
-            </a>
-            <a href="#" class="social-icon">
+            <a href="https://github.com/Allan941709" class="social-icon" target="_blank" rel="noopener noreferrer">
                 <img src="/img/github.png" alt="GitHub">
             </a>
-            <a href="#" class="social-icon">
-                <img src="/img/instagram.png" alt="Instagram">
-            </a>
-            <a href="#" class="social-icon">
+
+            <a href="https://www.linkedin.com/in/allan-solorzano-2aa140337/" class="social-icon" target="_blank" rel="noopener noreferrer">
                 <img src="/img/linkedin.png" alt="LinkedIn">
             </a>
         </div>
         <p class="copyright">© 2025 Mi Portafolio. Todos los derechos reservados.</p>
     </footer>
-    
-    <script src="/scrip.js"></script>
+
+    <script src="JavaScript/scrip.js"></script>
 </body>
 </html>
